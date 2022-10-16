@@ -1,0 +1,206 @@
+<!DOCTYPE html> <!-- doctype declaratiuon ( declares what type of document the file is)-->
+<html lang="en"> <!-- root tag, all of our HTML goes here.-->
+
+<!-- The head is typically metadata-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloHTMLCSS</title> <!-- This is the name that shows up on the tab --> 
+
+<!--Linking our EXTERNAL STYLE SHEET-->
+<link rel="stylesheet" href="HelloHC.css">
+
+<!-- CSS only, linking a BOOTSTRAP CDN for predesigned css templates -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<!-- The actual content of your webpage goes in the body tag -->
+<body>
+    
+<!-- header elements, h1 is the largest, h6 is the smallest -->
+        <h1 style="color:darkgreen"> Hello HTML and CSS</h1>
+        <h2 style="background-color:bisque"> Wassup HTML</h2>
+        <h3>Waddup css</h3> 
+        <h4> konnichiwa javascript</h4>
+        <h5>Que honda Typescript</h5>
+        <h6>im about to build a webpage</h6>
+
+    <p>I am a paragraph tag. </p><p>despite being written on the same line, we render on different lines</p>
+<!-- Recall that p tags are block elements, they block a line on the webpage for themselves -->
+
+    <span>I am a span.</span><span> I am another span.</span><span> we are inline elements.</span>
+
+<br> <!--Line breaks create a a line of empty space -->
+<br><br><br><br>
+
+<!-- divs are general division elements, creates a division on the page-->
+    <div>
+
+    <p>i am a paragraph element in a div</p>
+    <span>I am a span in a div</span>
+    <button class="btn btn-info">click me for a good time</button>
+
+    </div>
+
+
+    <div>
+        <h2>Favorite Pokemon</h2>
+
+<!-- ordered list-->
+            <ol class="navbar navbar-collapse col-sm-6">
+                <li>Gengar</li>
+                <li>Aegislash</li>
+                <li>Dragonite</li>
+                <li>Machamp</li>
+                <li>Swampert</li>
+                <li>Grimsnarl</li>
+
+            </ol>
+
+        <h3>Honorable Mentions</h3>
+
+            <ul id="unorderedList">
+                <li>Charizard</li>
+                <li>Tyranitar</li>
+                <li>Urshafoo</li>
+                <li>Salamence</li>
+                <li>Noivern</li>
+                <li>Spiritomb</li>
+                
+            </ul>   
+
+    </div>
+
+    <table class="table table-dark table-striped table-bordered"> <!-- This element starts a table -->
+
+        <thead> <!-- This element defines the header row-->
+            <tr>  <!-- This element is a row in the table-->
+
+                <th>Name</th> <!-- Data cell for header rows-->
+                <th>Gym Leader Type</th>
+
+            </tr> 
+        </thead>
+
+        <tbody> <!-- defining the body of our table-->
+            <tr>
+                <td>Chaz</td> <!--td is a data cell in the body-->
+                <td>Water/Ice</td>
+
+            </tr>
+            <tr>
+
+                <td>Luka</td>
+                <td>Fire/Rock</td>
+
+            </tr>
+            <tr>
+
+                <td>Nathan</td>
+                <td>Steel/Ground</td>
+
+
+            </tr>
+            <tr>
+
+                <td>Marco</td>
+                <td>Grass/Poison</td>
+
+            </tr>
+            <tr>
+
+                <td>Scott</td>
+                <td>Fighting/Normal</td>
+
+            </tr>
+            <tr>
+
+                <td>Nick</td>
+                <td>Electric/Dark</td>
+
+            </tr>
+            <tr>
+
+                <td>Max</td>
+                <td>Bug/Ghost</td>
+
+            </tr>
+            <tr>
+
+                <td>Regina</td>
+                <td>Psychic/Fairy</td>
+
+            </tr>
+            <tr>
+
+                <td>Ben</td>
+                <td>Dragon/Flying</td>
+
+            </tr>
+
+        </tbody>
+
+
+    </table>
+<!--Forms----------------------------------------->
+
+<!-- probably do NOT want to use forms in full stack apps, can get tricky with HTML requests-->
+
+<br><br>
+
+<form class="flex-container">
+
+
+    <label for="username">Enter username to login</label>
+    <input type="text" name="username" placeholder="enter username">
+
+    <br>
+
+    <label for="password">Enter password to login</label>
+    <input type="password" name="username" placeholder="enter password">
+
+    <br><br><br>
+    <!-- Radio buttons let you choose ONE option-->
+
+    <input type="radio" name="radio" id="radio1">
+    <label for="radio1">option 1</label>
+
+    
+
+    <input type="radio" name="radio" id="radio2">
+    <label for="radio2">option 2</label>
+
+    
+
+    <input type="radio" name="radio" id="radio3">
+    <label for="radio3">option 3</label>
+
+<br><br><br>
+        <!--Checkboxes let you choose MULTIPLE options-->
+
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        <label for="checkbox1">option 1</label>
+    
+        <br>
+    
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        <label for="checkbox2">option 2</label>
+    
+        <br>
+    
+        <input type="checkbox" name="checkbox" id="checkbox3">
+        <label for="checkbox3">option 3</label>
+
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>

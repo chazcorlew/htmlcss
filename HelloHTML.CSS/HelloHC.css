@@ -1,0 +1,42 @@
+/* element selector - this will style every ordered list */
+ol{
+    font-family: fantasy;
+    font-style: italic;
+    text-align: left;
+
+    margin:150px;
+    border:50px;
+    border-width: 10px;
+    border-color: coral;
+    padding:150px;
+
+
+}
+/* id selector - the element with the given id will be styled */
+#unorderedList{
+
+    font-family: fantasy;
+    font-style: italic;
+    text-align: left;
+
+    margin:50px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: coral;
+    padding: 50px;
+
+
+
+}
+
+/* class selector - every element with this class will be styled */
+.flex-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+
+
+
+}
