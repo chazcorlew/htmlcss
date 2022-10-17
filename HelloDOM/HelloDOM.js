@@ -38,6 +38,13 @@ let header = document.getElementById("h3")
 header.onmouseover = hoverFunc
 
 function hoverFunc(){
+    header.textContent = "yo im here!"
 
-    
+
+}
+
+header.onmouseleave = releaseFunc
+
+function releaseFunc(){
+    header.textContent = "hover over me!"
 }
